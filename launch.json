@@ -1,0 +1,20 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "Agent",
+    "name": "Agent",
+    "symbol": "AGENT",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "792281625142643375935439503360000"
+  },
+  "economics": {"poolBps":8800,"initialMarketCapWei":"10000000000000000000","remainderTo":"0x0120a4ccc7516344dbfedc9d43ff7859b7ccca97"},
+  "notes": "Agent is a fixed-supply ERC-20 named Agent (AGENT) with 18 decimals. Its argument-free constructor mints 1,000,000,000 tokens to msg.sender once. It exposes no further minting or administrative functions and charges no transfer fees. No application contracts or initialization calls are required. The pool pairs AGENT with native ETH at a 0.3% fee and tick spacing 60. With ETH as currency0, initialPrice records sqrt(totalSupply / initialMarketCapWei) * 2^96. This value is provenance only; the deployer derives the opening price from the supplied economics and totalSupply."
+}
